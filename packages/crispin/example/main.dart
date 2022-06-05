@@ -15,7 +15,7 @@ class PrintTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> info(Object? message, {Object? meta}) async {
+  Future<void> info(String message, {Object? meta}) async {
     if (isEnabled(CrispinLoggerLevel.info)) {
       print('INFO: $message');
       if (meta != null) {
@@ -27,7 +27,7 @@ class PrintTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> warn(Object? message, {Object? meta}) async {
+  Future<void> warn(String message, {Object? meta}) async {
     if (isEnabled(CrispinLoggerLevel.warn)) {
       print('WARN: $message');
       if (meta != null) {
@@ -39,7 +39,7 @@ class PrintTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> debug(Object? message, {Object? meta}) async {
+  Future<void> debug(String message, {Object? meta}) async {
     if (isEnabled(CrispinLoggerLevel.debug)) {
       print('DEBUG: $message');
       if (meta != null) {
@@ -51,7 +51,7 @@ class PrintTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> silly(Object? message, {Object? meta}) async {
+  Future<void> silly(String message, {Object? meta}) async {
     // You can just ignore fully implementing a method but doing so means you're aware that you didn't implement it.
   }
 

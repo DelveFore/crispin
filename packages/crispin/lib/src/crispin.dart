@@ -21,28 +21,28 @@ class Crispin {
   }
 
   ///
-  void info(Object? message, {Object? meta}) {
+  void info(String message, {Object? meta}) {
     for (final transport in _transports) {
       transport.info(message, meta: meta);
     }
   }
 
   ///
-  void warn(Object? message, {Object? meta}) {
+  void warn(String message, {Object? meta}) {
     for (final transport in _transports) {
       transport.warn(message, meta: meta);
     }
   }
 
   ///
-  void debug(Object? message, {Object? meta}) {
+  void debug(String message, {Object? meta}) {
     for (final transport in _transports) {
       transport.debug(message, meta: meta);
     }
   }
 
   ///
-  void silly(Object? message, {Object? meta}) {
+  void silly(String message, {Object? meta}) {
     for (final transport in _transports) {
       transport.silly(message, meta: meta);
     }

@@ -1,22 +1,22 @@
 /// Transports foundation class
 class CrispinTransport {
   ///
-  Future<void> info(Object? message, {Object? meta}) async {
+  Future<void> info(String message, {Object? meta}) async {
     throw UnimplementedError('Implement info method');
   }
 
   ///
-  Future<void> warn(Object? message, {Object? meta}) async {
+  Future<void> warn(String message, {Object? meta}) async {
     throw UnimplementedError('Implement warn method');
   }
 
   ///
-  Future<void> debug(Object? message, {Object? meta}) async {
+  Future<void> debug(String message, {Object? meta}) async {
     throw UnimplementedError('Implement debug method');
   }
 
   ///
-  Future<void> silly(Object? message, {Object? meta}) async {
+  Future<void> silly(String message, {Object? meta}) async {
     throw UnimplementedError('Implement silly method');
   }
 
