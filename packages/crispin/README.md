@@ -8,7 +8,7 @@ Crispin Logger for Dart and Flutter
 
 ```dart
 void main() {
-  Crispin().addTransport(CrispinLocalLoggerTransport());
+  Crispin().addTransport(LocalLoggerTransport('error'));
   FlutterError.onError = (FlutterErrorDetails details) {
     CrispinLogger().error('Flutter Error', error: details.exception, stackTrace: details.stack);
   };

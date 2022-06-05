@@ -20,10 +20,6 @@ class Crispin {
     _transports.add(value);
   }
 
-  List<CrispinTransport> get transports {
-    return _transports;
-  }
-
   ///
   void info(Object? message, {Object? meta}) {
     for (final transport in _transports) {
@@ -45,6 +41,7 @@ class Crispin {
     }
   }
 
+  ///
   void silly(Object? message, {Object? meta}) {
     for (final transport in _transports) {
       transport.silly(message, meta: meta);

@@ -1,6 +1,7 @@
-// Logging levels conform to the severity ordering specified by
-// [RFC5424]: _severity of all levels is assumed to be numerically **ascending**
-// from most important to least important._
+// ignore_for_file: public_member_api_docs
+/// Logging levels conform to the severity ordering specified by
+/// [RFC5424]: _severity of all levels is assumed to be numerically **ascending**
+/// from most important to least important._
 class CrispinLoggerLevel {
   static int error = 0;
   static int warn = 1;
@@ -10,10 +11,12 @@ class CrispinLoggerLevel {
   static int debug = 5;
   static int silly = 6;
 
+  ///
   static bool isValidName(String value) {
     return CrispinLoggerLevel.getFromName(value) > -1;
   }
 
+  ///
   static int getFromName(String value) {
     switch (value.toLowerCase()) {
       case 'error':
