@@ -18,3 +18,6 @@ scripts:
   test:
     run: melos exec --dir-exists="test" --fail-fast -- fvm flutter test --no-pub --coverage
     description: Run Flutter tests for a specific package in this project.
+
+  publish:
+    run: melos exec fvm dart pub publish --dry-run
