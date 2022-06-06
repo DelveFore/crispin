@@ -1,7 +1,7 @@
-name: crispin_core
+name: crispin
 description: Crispin Logger for Dart and Flutter
-version: 1.0.0+1
-publish_to: none
+version: 0.1.0
+homepage: https://github.com/delvefore/crispin
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
