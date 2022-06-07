@@ -1,5 +1,5 @@
 name: crispin
-description: Crispin Logger for Dart and Flutter
+description: Crispin Logger for Dart and Flutter, that allows to use transports along with the logger.
 version: 0.1.0
 homepage: https://github.com/delvefore/crispin
 
