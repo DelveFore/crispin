@@ -21,7 +21,11 @@ class CrispinTransport {
   }
 
   ///
-  Future<void> error(String message, {Object? error, StackTrace? stackTrace}) async {
+  Future<void> error(
+    String message, {
+    Object? error,
+    StackTrace? stackTrace,
+  }) async {
     throw UnimplementedError('Implement error method');
   }
 }
