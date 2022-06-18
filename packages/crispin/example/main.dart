@@ -52,7 +52,7 @@ class PrintTransport extends CrispinTransport {
   ///
   @override
   Future<void> silly(String message, {Object? meta}) async {
-    // You can just ignore fully implementing a method but doing so means you're aware that you didn't implement it.
+    // You can just fully ignore implementing a method but doing so means you're aware that you didn't implement it.
   }
 
   ///
