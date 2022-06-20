@@ -4,7 +4,14 @@ repository: https://github.com/DelveFore/crispin
 packages:
   - packages/**
 
+command:
+  version:
+    updateGitTagRefs: true
+    workspaceChangelog: true
+
 scripts:
+  postbootstrap: fvm flutter pub run build_runner build --delete-conflicting-outputs
+
   analyze:
     run: |
       melos exec -c 5 -- \

@@ -1,0 +1,67 @@
+# Crispin
+Crispin is heavily inspired by the fantastic [WinstonJS](https://github.com/winstonjs/winston) project!
+Thus, the name of this project is a nod to the Winston project by way of another reference.
+In the video game Overwatch the character Winston is voiced by Crispin Freeman.
+
+> Don't comment out your logs (ever again). Use tests and configure loggers instead.
+
+## Install
+
+```shell
+flutter pub add crispin
+```
+
+## Basic Usage
+Crispin acts as a "[Singleton](https://dart.academy/creational-design-patterns-for-dart-and-flutter-singleton/)" so you can configure it once and then use it throughout your application without ever needing comment out lines of code.
+
+Setup transports
+```dart
+import 'package:crispin/crispin.dart';
+import 'package:logger_crispin_transport/logger_crispin_transport.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+void main() {
+  Crispin().addTransport(LoggerCrispinTransport(LoggerCrispinTransportOptions(level: dotenv.get('LOGGER_LEVEL', 'warn'))));
+  // Note that an official SentryCrispinTransport is coming soon...
+  // Crispin().addTransport(
+  //  SentryCrispinTransport(
+  //    SentryCrispinTransportOptions(
+  //      level: dotenv.get('SENTRY_LEVEL', 'error'),
+  //      //... keys
+  //    ),
+  //  ),
+  // );
+}
+```
+
+Now start logging
+
+```dart
+void getUser () async {
+  try {
+    User user = await DataService.getUserById('1');
+    Crispin().info('User data', meta: user);
+  } catch(e, s) {
+    Crispin().error('User fetching failed', error: e, stackTrace: s);
+  }
+}
+```
+
+A Powerful use case is zone guards
+```dart
+Future<void> runWithGuards() async {
+  final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+  runZonedGuarded(
+    () async {
+      WidgetsFlutterBinding.ensureInitialized();
+      await init(navigatorKey);
+
+      runApp(FursureApp(navigatorKey));
+    },
+    (Object error, StackTrace stackTrace) async {
+      Crispin().error('Zone Guard Caught Error', error: error, stackTrace: stackTrace);
+      onUnhandledError(error, navigatorKey: navigatorKey, stackTrace: stackTrace); // <-- the navigatorKey is here for a nice trick when needing to perform navigation on errors.
+    },
+  );
+}
+```
