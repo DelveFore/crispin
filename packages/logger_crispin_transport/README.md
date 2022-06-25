@@ -31,7 +31,7 @@ void main() {
 
 Please see `/example` folder and docs for more examples and please see the docs for more information on usage.
 
-![default output](docs/images/default_output.png)
+![default output](doc/images/default_output.png)
 
 ## How To Contribute
 1. Create Github issue describing what you'd like to change and use the label `LoggerCrispinTransport` and label either `bug`, `enhancement`, `question`
