@@ -27,4 +27,4 @@ scripts:
     description: Run Flutter tests for a specific package in this project.
 
   publish:
-    run: melos exec fvm dart pub publish --dry-run
+    run: melos exec fvm dart pub publish
