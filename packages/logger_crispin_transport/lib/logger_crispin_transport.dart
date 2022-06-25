@@ -18,6 +18,7 @@ class LoggerCrispinTransport extends CrispinTransport {
   LoggerCrispinTransport(this.options);
   final LoggerCrispinTransportOptions options;
 
+  ///
   bool isEnabled(int level) {
     final isEnabled = CrispinLoggerLevel.isValidName(options.level);
     if (isEnabled && options.level.isNotEmpty) {
