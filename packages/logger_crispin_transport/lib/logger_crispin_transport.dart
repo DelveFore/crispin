@@ -5,17 +5,33 @@ import 'package:logger/logger.dart';
 
 ///
 class LoggerCrispinTransportOptions {
+  ///
   LoggerCrispinTransportOptions({
     required this.level,
     LogPrinter? printer,
+    this.output,
+    this.filter,
   }) : printer = printer ?? PrefixPrinter(PrettyPrinter(colors: false));
+
+  ///
   final LogPrinter printer;
+
+  ///
   final String level;
+
+  ///
+  final LogOutput? output;
+
+  ///
+  final LogFilter? filter;
 }
 
 ///
 class LoggerCrispinTransport extends CrispinTransport {
+  ///
   LoggerCrispinTransport(this.options);
+
+  ///
   final LoggerCrispinTransportOptions options;
 
   ///
@@ -29,54 +45,61 @@ class LoggerCrispinTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> info(String message, {Object? meta}) async {
+  Future<void> info(String message, {Object? meta, StackTrace? stackTrace}) async {
     if (isEnabled(CrispinLoggerLevel.info)) {
-      var logger = Logger(
+      Logger(
         printer: options.printer,
-      );
-      logger.i(message, meta);
+        filter: options.filter,
+        output: options.output,
+      ).i(message, meta, stackTrace);
     }
   }
 
   ///
   @override
-  Future<void> warn(String message, {Object? meta}) async {
+  Future<void> warn(String message, {Object? meta, StackTrace? stackTrace}) async {
     if (isEnabled(CrispinLoggerLevel.warn)) {
-      var logger = Logger(
+      Logger(
         printer: options.printer,
-      );
-      logger.w(message, meta);
+        filter: options.filter,
+        output: options.output,
+      ).w(message, meta, stackTrace);
     }
   }
 
   ///
   @override
-  Future<void> debug(String message, {Object? meta}) async {
+  Future<void> debug(String message, {Object? meta, StackTrace? stackTrace}) async {
     if (isEnabled(CrispinLoggerLevel.debug)) {
-      var logger = Logger(
+      Logger(
         printer: options.printer,
-      );
-      logger.d(message, meta);
+        filter: options.filter,
+        output: options.output,
+      ).d(message, meta, stackTrace);
     }
   }
 
   ///
   @override
-  Future<void> silly(String message, {Object? meta}) async {
-    var logger = Logger(
-      printer: options.printer,
-    );
-    logger.v(message, meta);
+  Future<void> silly(String message, {Object? meta, StackTrace? stackTrace}) async {
+    if (isEnabled(CrispinLoggerLevel.silly)) {
+      Logger(
+        printer: options.printer,
+        filter: options.filter,
+        output: options.output,
+      ).v(message, meta, stackTrace);
+    }
   }
 
   ///
   @override
   Future<void> error(String message, {Object? error, StackTrace? stackTrace}) async {
     if (isEnabled(CrispinLoggerLevel.error)) {
-      var logger = Logger(
+      Logger(
         printer: options.printer,
-      );
-      logger.e(message, error, stackTrace);
+        filter: options.filter,
+        output: options.output,
+      ).e(message, error, stackTrace);
     }
   }
 }
