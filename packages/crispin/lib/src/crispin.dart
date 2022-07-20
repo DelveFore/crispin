@@ -21,30 +21,34 @@ class Crispin {
   }
 
   /// Call all enabled transport [info] methods
-  void info(String message, {Object? meta}) {
+  /// While the benefit depends on the transports, we recommend to invoking with stackTrace
+  ///   e.g. Crispin().info('..', stackTrace: StackTrace.current)
+  void info(String message, {Object? meta, StackTrace? stackTrace}) {
     for (final transport in _transports) {
-      transport.info(message, meta: meta);
+      transport.info(message, meta: meta, stackTrace: stackTrace);
     }
   }
 
   /// Call all enabled transport [warn] methods
-  void warn(String message, {Object? meta}) {
+  /// While the benefit depends on the transports, we recommend to invoking with stackTrace
+  ///   e.g. Crispin().warn('..', stackTrace: StackTrace.current)
+  void warn(String message, {Object? meta, StackTrace? stackTrace}) {
     for (final transport in _transports) {
-      transport.warn(message, meta: meta);
+      transport.warn(message, meta: meta, stackTrace: stackTrace);
     }
   }
 
   /// Call all enabled transport [debug] methods
-  void debug(String message, {Object? meta}) {
+  void debug(String message, {Object? meta, StackTrace? stackTrace}) {
     for (final transport in _transports) {
-      transport.debug(message, meta: meta);
+      transport.debug(message, meta: meta, stackTrace: stackTrace);
     }
   }
 
   /// Call all enabled transport [silly] methods
-  void silly(String message, {Object? meta}) {
+  void silly(String message, {Object? meta, StackTrace? stackTrace}) {
     for (final transport in _transports) {
-      transport.silly(message, meta: meta);
+      transport.silly(message, meta: meta, stackTrace: stackTrace);
     }
   }
 

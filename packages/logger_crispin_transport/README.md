@@ -1,4 +1,16 @@
-A Crispin Transport for [Logger](https://pub.dev/packages/logger)
+# Crispin Transport for Logger 
+
+[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
+[![License: MIT][license_badge]][license_link]
+[![melos][melos_badge]][melos_link]
+
+<p style="text-align: center">
+  <a href="https://docs.page/delvefore/crispin">Documentation</a> &bull; 
+  <a href="https://github.com/DelveFore/crispin/blob/master/packages/crispin/LICENSE">License</a>
+</p>
+
+A [Crispin Transport](https://docs.page/delvefore/crispin/transport-logger) for [Logger](https://pub.dev/packages/logger)
+
 
 ## Features
 Because [Logger](https://pub.dev/packages/logger) doesn't follow RFC5424 with ascension, `LoggerCrispinTransport` maps log levels as the following:
@@ -41,4 +53,12 @@ Please see `/example` folder and docs for more examples and please see the docs 
 Create Github issue with the label `LoggerCrispinTransport` and then either `bug`, `enhancement`, `question`.
 
 ## Documentation
-For more documentation please see `docs` (_link coming soon..._)
+Please visit us at [Crispin Transport](https://docs.page/delvefore/crispin/transport-logger)
+
+
+[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
+[license_link]: https://opensource.org/licenses/MIT
+[very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
+[very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
+[melos_badge]: https://img.shields.io/badge/maintained%20with-melos-f700ff.svg?style=flat-square
+[melos_link]: https://github.com/invertase/melos
