@@ -4,7 +4,12 @@
 [![License: MIT][license_badge]][license_link]
 [![melos][melos_badge]][melos_link]
 
-Crispin Logger for Dart and Flutter
+<p style="text-align: center">
+  <a href="https://docs.page/delvefore/crispin">Documentation</a> &bull; 
+  <a href="https://github.com/DelveFore/crispin/blob/master/packages/crispin/LICENSE">License</a>
+</p>
+
+[Crispin](https://docs.page/delvefore/crispin) is a configurable for Dart and Flutter centralizing and streamlining the decision of what specific logger to use and when. This is done through a common interface with the ability to add many [Transports](https://docs.page/delvefore/crispin/transports) as needed. 
 
 
 ```dart
@@ -19,7 +24,7 @@ void main() {
 ## Inspiration
 Heavily inspired by the fantastic [WinstonJS](https://github.com/winstonjs/winston) project!
 Thus, the name of this project is a nod to the Winston project by way of another reference. 
-In the video game OverWatch the character Winston is voiced by Crispin Freeman. 
+In the video game Overwatch, the character Winston is voiced by [**_Crispin_** Freeman](https://www.crispinfreeman.com/) 
 
 
 ## README Badge
