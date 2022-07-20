@@ -10,11 +10,9 @@ command:
     workspaceChangelog: true
 
 scripts:
-  postbootstrap: fvm flutter pub run build_runner build --delete-conflicting-outputs
-
   analyze:
     run: |
-      melos exec -c 5 -- \
+      fvm flutter pub global run melos exec -c 5 -- \
         dart analyze . --fatal-infos
 
     description: |
@@ -23,8 +21,8 @@ scripts:
 
 
   test:
-    run: melos exec --dir-exists="test" --fail-fast -- fvm flutter test --no-pub --coverage
+    run: fvm flutter pub global run melos exec --dir-exists="test" --fail-fast -- fvm flutter test --no-pub --coverage
     description: Run Flutter tests for a specific package in this project.
 
   publish:
-    run: melos exec fvm dart pub publish
+    run: fvm flutter pub global run melos exec fvm dart pub publish
