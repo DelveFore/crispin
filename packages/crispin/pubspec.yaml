@@ -1,7 +1,7 @@
 name: crispin
 description: Crispin Logger for Dart and Flutter, that allows to use transports along with the logger.
-version: 0.2.0
 homepage: https://github.com/delvefore/crispin
+version: 1.0.0
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
