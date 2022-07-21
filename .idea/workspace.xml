@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7305d4ca-8bca-40bb-a041-46849153e1a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/docs/transports.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/transports.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crispin/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crispin/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crispin/example/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crispin/example/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crispin/lib/src/crispin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crispin/lib/src/crispin.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crispin/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crispin/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crispin/test/src/crispin_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crispin/test/src/crispin_test.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/melos_crispin.iml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/packages/crispin/pubspec.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/packages/crispin/example/main.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/packages/crispin/lib/src/crispin_transport.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/packages/crispin/test/src/crispin_test.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/packages/crispin/lib/src/crispin_logger_level.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/packages/crispin/lib/src/crispin.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/packages/crispin/lib/crispin.dart" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="2A3Lc8iwXdmD9dTFDS248stIxzQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/logger_crispin_transport/test" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/logger_crispin_transport/test" />
+      <recent name="$PROJECT_DIR$/packages/crispin/test/src" />
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$/packages/logger_crispin_transport" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$/docs/trasports" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/packages/logger_crispin_transport/docs/images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Dart Test.Crispin in crispin_test.dart">
+    <configuration name="main.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/packages/crispin/example/main.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/packages/crispin" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Crispin in crispin_test.dart" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/packages/crispin/test/src/crispin_test.dart" />
+      <option name="scope" value="GROUP_OR_TEST_BY_NAME" />
+      <option name="testName" value="Crispin" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in debug_test.dart" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/packages/crispin/test/src/debug_test.dart" />
+      <option name="testName" value="debug_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="error() in error_test.dart" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/packages/logger_crispin_transport/test/error_test.dart" />
+      <option name="scope" value="GROUP_OR_TEST_BY_NAME" />
+      <option name="testName" value="error()" />
+      <method v="2" />
+    </configuration>
+    <configuration name="remove transport by Type in crispin_test.dart" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/packages/crispin/test/src/crispin_test.dart" />
+      <option name="scope" value="GROUP_OR_TEST_BY_NAME" />
+      <option name="testName" value="remove transport by Type" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart Test.Crispin in crispin_test.dart" />
+        <item itemvalue="Dart Test.remove transport by Type in crispin_test.dart" />
+        <item itemvalue="Dart Test.Tests in debug_test.dart" />
+        <item itemvalue="Dart Command Line App.main.dart" />
+        <item itemvalue="Dart Test.error() in error_test.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7305d4ca-8bca-40bb-a041-46849153e1a9" name="Changes" comment="" />
+      <created>1654233398515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654233398515</updated>
+      <workItem from="1654233400646" duration="54000" />
+      <workItem from="1654233492164" duration="3931000" />
+      <workItem from="1654237491777" duration="38951000" />
+      <workItem from="1654587675923" duration="635000" />
+      <workItem from="1655454945166" duration="35736000" />
+      <workItem from="1656114661067" duration="10531000" />
+      <workItem from="1656290621413" duration="1212000" />
+      <workItem from="1657943096332" duration="4000" />
+      <workItem from="1657943293887" duration="756000" />
+      <workItem from="1658265249382" duration="6000" />
+      <workItem from="1658266781190" duration="12262000" />
+      <workItem from="1658372762883" duration="6254000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
