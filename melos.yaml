@@ -10,6 +10,9 @@ command:
     workspaceChangelog: true
 
 scripts:
+  format:
+    run: fvm flutter pub global run melos exec flutter format lib
+
   analyze:
     run: |
       fvm flutter pub global run melos exec -c 5 -- \
