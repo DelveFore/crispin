@@ -1,3 +1,7 @@
+## 1.1.0
+- Add `removeTransportByType` allowing removal of transports by a `Type`
+- Add `removeAllTransports`
+
 ## 1.0.0
 - All log level methods now accept optional `stackTrace` parameter
 

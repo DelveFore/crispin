@@ -45,7 +45,8 @@ class LoggerCrispinTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> info(String message, {Object? meta, StackTrace? stackTrace}) async {
+  Future<void> info(String message,
+      {Object? meta, StackTrace? stackTrace}) async {
     if (isEnabled(CrispinLoggerLevel.info)) {
       Logger(
         printer: options.printer,
@@ -57,7 +58,8 @@ class LoggerCrispinTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> warn(String message, {Object? meta, StackTrace? stackTrace}) async {
+  Future<void> warn(String message,
+      {Object? meta, StackTrace? stackTrace}) async {
     if (isEnabled(CrispinLoggerLevel.warn)) {
       Logger(
         printer: options.printer,
@@ -69,7 +71,8 @@ class LoggerCrispinTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> debug(String message, {Object? meta, StackTrace? stackTrace}) async {
+  Future<void> debug(String message,
+      {Object? meta, StackTrace? stackTrace}) async {
     if (isEnabled(CrispinLoggerLevel.debug)) {
       Logger(
         printer: options.printer,
@@ -81,7 +84,8 @@ class LoggerCrispinTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> silly(String message, {Object? meta, StackTrace? stackTrace}) async {
+  Future<void> silly(String message,
+      {Object? meta, StackTrace? stackTrace}) async {
     if (isEnabled(CrispinLoggerLevel.silly)) {
       Logger(
         printer: options.printer,
@@ -93,7 +97,8 @@ class LoggerCrispinTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> error(String message, {Object? error, StackTrace? stackTrace}) async {
+  Future<void> error(String message,
+      {Object? error, StackTrace? stackTrace}) async {
     if (isEnabled(CrispinLoggerLevel.error)) {
       Logger(
         printer: options.printer,
