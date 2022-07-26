@@ -20,6 +20,21 @@ class Crispin {
     _transports.add(value);
   }
 
+  /// Remove a transport by Type
+  void removeTransportByType(Type type) {
+    _transports.removeWhere((element) => element.runtimeType == type);
+  }
+
+  /// Mostly used for unit testing in your code
+  void removeAllTransports() {
+    _transports.clear();
+  }
+
+  ///
+  int get transportCount {
+    return _transports.length;
+  }
+
   /// Call all enabled transport [info] methods
   /// While the benefit depends on the transports, we recommend to invoking with stackTrace
   ///   e.g. Crispin().info('..', stackTrace: StackTrace.current)
