@@ -5,7 +5,10 @@ import 'package:test/test.dart';
 void main() {
   group('SentryCrispinTransport', () {
     test('can be instantiated', () {
-      expect(SentryCrispinTransport(), isNotNull);
+      expect(
+        SentryCrispinTransport(SentryCrispinTransportOptions(level: 'info')),
+        isNotNull,
+      );
     });
   });
 }
