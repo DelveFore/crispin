@@ -21,6 +21,7 @@ class SentryCrispinTransport extends CrispinTransport {
   /// {@macro sentry_crispin_transport}
   SentryCrispinTransport(this.options);
 
+  /// Options that goes along `SentryCrispinTransport`
   final SentryCrispinTransportOptions options;
 
   ///

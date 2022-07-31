@@ -12,6 +12,5 @@ dev_dependencies:
   test: ^1.19.2
   very_good_analysis: ^2.4.0
 dependencies: 
-  crispin: 
-    path: ../crispin
+  crispin: ^1.1.0
   sentry: ^6.6.3
