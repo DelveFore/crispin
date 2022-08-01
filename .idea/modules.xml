@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/packages/crispin/melos_crispin.iml" filepath="$PROJECT_DIR$/packages/crispin/melos_crispin.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/logger_crispin_transport/melos_logger_crispin_transport.iml" filepath="$PROJECT_DIR$/packages/logger_crispin_transport/melos_logger_crispin_transport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/sentry_crispin_transport/melos_sentry_crispin_transport.iml" filepath="$PROJECT_DIR$/packages/sentry_crispin_transport/melos_sentry_crispin_transport.iml" />
       <module fileurl="file://$PROJECT_DIR$/melos_crispin.iml" filepath="$PROJECT_DIR$/melos_crispin.iml" />
     </modules>
   </component>
