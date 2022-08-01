@@ -2,14 +2,13 @@
   "name": "crispin",
   "zoomImages": "false",
   "sidebar": [
+    ["Welcome", "/"],
     [
-      "Welcome",
-      "/"
-    ],
-    [
-      "Transports", [
+      "Transports",
+      [
         ["Introduction", "/transports"],
-        ["Logger", "/transport-logger"]
+        ["Logger", "/transport-logger"],
+        ["Sentry", "/transport-sentry"]
       ]
     ]
   ]
