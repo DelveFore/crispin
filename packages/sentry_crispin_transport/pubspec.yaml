@@ -1,6 +1,6 @@
 name: sentry_crispin_transport
 description: A dart and flutter Sentry Transport for Crispin Logger with levels.
-version: 1.0.0+1
+version: 1.1.0+1
 homepage: https://docs.page/delvefore/crispin/transport-sentry
 
 environment:
@@ -8,7 +8,7 @@ environment:
 
 dependencies:
   crispin: ^1.1.0
-  sentry: ^6.6.3
+  sentry: ^7.7.0
 
 dev_dependencies:
   coverage: ^1.1.0
