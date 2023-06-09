@@ -8,7 +8,7 @@ environment:
 
 dependencies:
   crispin: ^1.1.0
-  sentry: ^6.6.3
+  sentry: ^7.7.0
 
 dev_dependencies:
   coverage: ^1.1.0
