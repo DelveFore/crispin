@@ -45,66 +45,102 @@ class LoggerCrispinTransport extends CrispinTransport {
 
   ///
   @override
-  Future<void> info(String message,
-      {Object? meta, StackTrace? stackTrace}) async {
+  Future<void> info(
+    String message, {
+    Object? meta,
+    StackTrace? stackTrace,
+  }) async {
     if (isEnabled(CrispinLoggerLevel.info)) {
       Logger(
         printer: options.printer,
         filter: options.filter,
         output: options.output,
-      ).i(message, meta, stackTrace);
+      ).i(
+        message,
+        stackTrace: stackTrace,
+        time: DateTime.now(),
+      );
     }
   }
 
   ///
   @override
-  Future<void> warn(String message,
-      {Object? meta, StackTrace? stackTrace}) async {
+  Future<void> warn(
+    String message, {
+    Object? meta,
+    StackTrace? stackTrace,
+  }) async {
     if (isEnabled(CrispinLoggerLevel.warn)) {
       Logger(
         printer: options.printer,
         filter: options.filter,
         output: options.output,
-      ).w(message, meta, stackTrace);
+      ).w(
+        message,
+        stackTrace: stackTrace,
+        time: DateTime.now(),
+      );
     }
   }
 
   ///
   @override
-  Future<void> debug(String message,
-      {Object? meta, StackTrace? stackTrace}) async {
+  Future<void> debug(
+    String message, {
+    Object? meta,
+    StackTrace? stackTrace,
+  }) async {
     if (isEnabled(CrispinLoggerLevel.debug)) {
       Logger(
         printer: options.printer,
         filter: options.filter,
         output: options.output,
-      ).d(message, meta, stackTrace);
+      ).d(
+        message,
+        stackTrace: stackTrace,
+        time: DateTime.now(),
+      );
     }
   }
 
   ///
   @override
-  Future<void> silly(String message,
-      {Object? meta, StackTrace? stackTrace}) async {
+  Future<void> silly(
+    String message, {
+    Object? meta,
+    StackTrace? stackTrace,
+  }) async {
     if (isEnabled(CrispinLoggerLevel.silly)) {
       Logger(
         printer: options.printer,
         filter: options.filter,
         output: options.output,
-      ).v(message, meta, stackTrace);
+      ).t(
+        message,
+        stackTrace: stackTrace,
+        time: DateTime.now(),
+      );
     }
   }
 
   ///
   @override
-  Future<void> error(String message,
-      {Object? error, StackTrace? stackTrace}) async {
+  Future<void> error(
+    String message, {
+    Object? error,
+    StackTrace? stackTrace,
+  }) async {
     if (isEnabled(CrispinLoggerLevel.error)) {
       Logger(
         printer: options.printer,
         filter: options.filter,
         output: options.output,
-      ).e(message, error, stackTrace);
+      ).e(
+        message,
+        stackTrace: stackTrace,
+        error: error,
+        time: DateTime.now(),
+      );
     }
   }
 }
