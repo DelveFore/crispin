@@ -1,3 +1,7 @@
+## 1.2.0
+- Updated `logger` version to `2.2.0`
+
+ 
 ## 1.1.0
 - Remove dependency on Flutter
 - Updated Transport contract to `1.0.0` of Crispin; accepting optional name parameter of `stackTrace`
